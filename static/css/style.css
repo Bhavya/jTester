@@ -1,0 +1,237 @@
+html{
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px;
+  height: 100%;
+} 
+
+body{
+	margin: 0 auto;
+  border: 0;
+	padding: 0;
+  display: block;
+  font-family:  'Helvetica', 'Lucida Sans', 'Lucida', sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #777;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  border: 1px #ddd solid;
+}
+
+a{
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+  color: #ddd;
+}
+
+a:hover{
+  color: #ccc;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  color: #999;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h1 strong{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+table {
+  font-size: 12px;
+}
+
+
+.panel {
+  width: 140px;
+  height: 100%;
+  background-color: #ddd;
+  -moz-box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  box-shadow: inner 0 0 5px #fff;
+  border: 1px solid #bbb;
+  margin: 0 auto;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+
+.panel button {  
+  moz-box-shadow:inset 0px 1px 3px 0px #999399;
+  -webkit-box-shadow:inset 0px 1px 3px 0px #999399;
+  box-shadow:inset 0px 1px 3px 0px #999399;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0); 
+  background-color:#ffffff;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#666666;
+  font-family:arial;
+  font-size:11px;
+  font-weight:bold;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px -7px 0px #ffffff;
+  width: 98%;
+}
+
+.panel button:hover {  
+    background-color:transparent;
+}
+
+.panel button:active {
+    position:relative;
+    top:1px;
+}
+
+.panel button.start {   
+    -moz-box-shadow:inset 0px 1px 3px 0px #a1d61c;
+    -webkit-box-shadow:inset 0px 1px 3px 0px #a1d61c;
+    box-shadow:inset 0px 1px 3px 0px #a1d61c;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #86b510), color-stop(1, #6c8f13));
+    background:-moz-linear-gradient(top, #86b510 5%, #6c8f13 100%);
+    background:-webkit-linear-gradient(top, #86b510 5%, #6c8f13 100%);
+    background:-o-linear-gradient(top, #86b510 5%, #6c8f13 100%);
+    background:-ms-linear-gradient(top, #86b510 5%, #6c8f13 100%);
+    background:linear-gradient(to bottom, #86b510 5%, #6c8f13 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#86b510', endColorstr='#6c8f13',GradientType=0);
+    background-color:#86b510;  
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    border:1px solid #6a7354;
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:11px;
+    font-weight:bold;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5a731b;
+    
+}
+
+.panel button.start:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c8f13), color-stop(1, #86b510));
+    background:-moz-linear-gradient(top, #6c8f13 5%, #86b510 100%);
+    background:-webkit-linear-gradient(top, #6c8f13 5%, #86b510 100%);
+    background:-o-linear-gradient(top, #6c8f13 5%, #86b510 100%);
+    background:-ms-linear-gradient(top, #6c8f13 5%, #86b510 100%);
+    background:linear-gradient(to bottom, #6c8f13 5%, #86b510 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c8f13', endColorstr='#86b510',GradientType=0);
+    background-color:#6c8f13;
+}
+
+.panel button.start:active {
+    position:relative;
+    top:1px;
+}
+
+.panel div.log {
+  width: 135px;
+  height: 300px;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #CCC;
+}
+
+.panel div.log::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+}
+
+.panel div.log::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.panel div.log div{
+  width: 93%;
+  min-height: 20px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #E1F5C4;
+}
+
+.focus {
+  border: 3px solid red !important;
+}
+
+
+
+.menu td{
+  font-family: sans-serif;
+  color: #666;
+  font-weight: bold;
+  padding: 5px;
+}
+
+div.content {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 80px;
+  background-color: #F3F3F3;
+  border: 4px dashed #999;
+}
+
+div.content button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #ffffff;
+}.jTesterDemoButton:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}.jTesterDemoButton:active {
+  position:relative;
+  top:1px;
+}
+
+div.content h1{
+  font-family: 'Scada', sans-serif;
+}
