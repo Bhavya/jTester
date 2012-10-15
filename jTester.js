@@ -146,9 +146,8 @@ jTester = function jTester() {
 			};
 		})();	
 		
-		var $this = this;
 		this.mode = (function() {
-			var self = $this.Session.get("mode") || 0x00;
+			var self = this.Session.get("mode") || 0x00;
 			return {
 				mode: function() { return self; },
 				stall: function() { 
@@ -168,9 +167,9 @@ jTester = function jTester() {
 				running: function() { return (self == 0x02); },
 				save: function() { 
 					return this.Session.set("mode", self); 
-				}.bind($this)
+				}.bind(this)
 			};
-		})();
+		}.bind(this))();
 
    		this.setUpUI();
    		this.pullSessionDataPTrans();
@@ -198,7 +197,7 @@ jTester = function jTester() {
    				this._start.innerHTML = "Start Recording";
    			}
    			return;
-   		};
+   		}.bind(this);
 
    		this._withTiming = document.createElement('input');
    		this._withTiming.type = "checkbox";
@@ -225,7 +224,7 @@ jTester = function jTester() {
    			}
    			this.macros.push(this.clone(this.dumpNT()));
    			this.clearNT();
-   		};
+   		}.bind(this);
 
    		// The logging console
    		this._log = document.createElement('div');
